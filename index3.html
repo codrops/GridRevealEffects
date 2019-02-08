@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid Reveal Effects using anime.js | Demo 3 | Codrops</title>
+		<meta name="description" content="Some grid animation effects using anime.js" />
+		<meta name="keywords" content="grid, animation, effect, anime.js, inspiration, web design, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/aku8mpq.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="demo-3 loading">
+		<!-- we are "preloading" the images in this hard-coded way; this should be done properly in a project, i.e. on click load -->
+		<div class="hidden">
+			<img src="img/large/1.jpg"/>
+			<img src="img/large/2.jpg"/>
+			<img src="img/large/3.jpg"/>
+			<img src="img/large/4.jpg"/>
+			<img src="img/large/5.jpg"/>
+			<img src="img/large/6.jpg"/>
+			<img src="img/large/7.jpg"/>
+			<img src="img/large/8.jpg"/>
+			<img src="img/large/9.jpg"/>
+			<img src="img/large/10.jpg"/>
+			<img src="img/large/11.jpg"/>
+			<img src="img/large/12.jpg"/>
+			<img src="img/large/13.jpg"/>
+			<img src="img/large/14.jpg"/>
+			<img src="img/large/15.jpg"/>
+			<img src="img/large/16.jpg"/>
+			<img src="img/large/17.jpg"/>
+			<img src="img/large/18.jpg"/>
+			<img src="img/large/19.jpg"/>
+			<img src="img/large/20.jpg"/>
+			<img src="img/large/21.jpg"/>
+		</div>
+		<main>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Grid Reveal Effects</h1>
+					<div class="frame__links">
+						<a href="https://tympanus.net/Development/TextDistortionEffects/">Previous Demo</a>
+						<a href="https://tympanus.net/codrops/?p=38214">Article</a>
+						<a href="https://github.com/codrops/GridRevealEffects/">GitHub</a>
+					</div>
+				</div>
+				<div class="frame__nav">
+					<a>project</a>
+					<a>team</a>
+					<a>docs</a>
+				</div>
+				<span class="frame__main">Photostream</span>
+				<span class="frame__version">v2.0.1</span>
+				<div class="frame__demos">
+					<span>Effects:</span>
+					<a href="index.html" class="frame__demo">1</a>
+					<a href="index2.html" class="frame__demo">2</a>
+					<a href="index3.html" class="frame__demo frame__demo--current">3</a>
+					<a href="index4.html" class="frame__demo">4</a>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">Yerevan</h2>
+			</div>
+			<div class="grid-wrap">
+				<div class="grid">
+					<div class="grid__item" data-title="London"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Yerevan"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Paris"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title="Madrid"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="Moscow"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Lagos"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Dublin"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Bangkok"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Luanda"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title="Buenos Aires"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Berlin"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Vienna"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Minsk"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Brussels"><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+					<div class="grid__item" data-title="Lisbon"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Porto-Novo"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Sofia"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Phnom Penh"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title="Ottawa"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title="Praia"><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title="Bogota"><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+					<div class="grid__item" data-title="Beijing"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Santiago"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="N'Djamena"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Bangui"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Yaounde"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Gitega"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Ouagadougou"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Bonn"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Brasilia"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title="Gaborone"><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title="Sarajevo"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title="La Paz"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Thimphu"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Belmopan"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Bridgetown"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Dhaka"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title="Manama"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Nassau"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Baku"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title="Canberra"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Saint John's"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Andorra la Vella"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Algiers"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Tirana"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Kabul"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Moroni"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Brazzaville"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Kinshasa"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="San Jose"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title="Yamoussoukro"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title="Zagreb"><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title="Havana"><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+					<div class="grid__item" data-title="Nicosia"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Prague"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="Copenhagen"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Djibouti"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Roseau"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Santo Domingo"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Dili"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Quito"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Cairo"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title="San Salvador"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title="Malabo"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Asmara"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Tallinn"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Addis Ababa"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Suva"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title="Helsinki"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Libreville"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Banjul"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title="Tbilisi"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Accra"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Athens"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Saint George's"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Guatemala City"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Conakry"><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+					<div class="grid__item" data-title="Bissau"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Georgetown"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Port-au-Prince"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Tegucigalpa"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title="Budapest"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title="Reykjavik"><div class="grid__item-inner" style="background-image:url(img/20.jpg)"></div></div>
+					<div class="grid__item" data-title="New Delhi"><div class="grid__item-inner" style="background-image:url(img/21.jpg)"></div></div>
+					<div class="grid__item" data-title="Jakarta"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Tehran"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="Baghdad"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Jerusalem"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Rome"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Kingston"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Tokyo"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Amman"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Astana"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Nairobi"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title="Tarawa Atoll"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Pyongyang"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Seoul"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Pristina"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Kuwait City"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Bishkek"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Vientiane"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Riga"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Beirut"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Maseru"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Monrovia"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title="Tripoli"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="Vaduz"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Vilnius"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Luxembourg"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Skopje"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Antananarivo"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title="Lilongwe"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Kuala Lumpur"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Male"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Bamako"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Valletta"><div class="grid__item-inner" style="background-image:url(img/14.jpg)"></div></div>
+					<div class="grid__item" data-title="Majuro"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Nouakchott"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Port Louis"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Mexico City"><div class="grid__item-inner" style="background-image:url(img/18.jpg)"></div></div>
+					<div class="grid__item" data-title="Palikir"><div class="grid__item-inner" style="background-image:url(img/19.jpg)"></div></div>
+					<div class="grid__item" data-title="Chisinau"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Monaco"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Ulaanbaatar"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Podgorica"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Rabat"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Maputo"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+					<div class="grid__item" data-title="Naypyidaw"><div class="grid__item-inner" style="background-image:url(img/10.jpg)"></div></div>
+					<div class="grid__item" data-title="Windhoek"><div class="grid__item-inner" style="background-image:url(img/11.jpg)"></div></div>
+					<div class="grid__item" data-title="Kathmandu"><div class="grid__item-inner" style="background-image:url(img/12.jpg)"></div></div>
+					<div class="grid__item" data-title="Amsterdam"><div class="grid__item-inner" style="background-image:url(img/13.jpg)"></div></div>
+					<div class="grid__item" data-title="Wellington"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Managua"><div class="grid__item-inner" style="background-image:url(img/15.jpg)"></div></div>
+					<div class="grid__item" data-title="Niamey"><div class="grid__item-inner" style="background-image:url(img/16.jpg)"></div></div>
+					<div class="grid__item" data-title="Abuja"><div class="grid__item-inner" style="background-image:url(img/17.jpg)"></div></div>
+					<div class="grid__item" data-title="Oslo"><div class="grid__item-inner" style="background-image:url(img/1.jpg)"></div></div>
+					<div class="grid__item" data-title="Muscat"><div class="grid__item-inner" style="background-image:url(img/2.jpg)"></div></div>
+					<div class="grid__item" data-title="Islamabad"><div class="grid__item-inner" style="background-image:url(img/3.jpg)"></div></div>
+					<div class="grid__item" data-title="Melekeok"><div class="grid__item-inner" style="background-image:url(img/4.jpg)"></div></div>
+					<div class="grid__item" data-title="Panama City"><div class="grid__item-inner" style="background-image:url(img/5.jpg)"></div></div>
+					<div class="grid__item" data-title="Port Moresby"><div class="grid__item-inner" style="background-image:url(img/6.jpg)"></div></div>
+					<div class="grid__item" data-title="Asuncion"><div class="grid__item-inner" style="background-image:url(img/7.jpg)"></div></div>
+					<div class="grid__item" data-title="Lima"><div class="grid__item-inner" style="background-image:url(img/8.jpg)"></div></div>
+					<div class="grid__item" data-title="Manila"><div class="grid__item-inner" style="background-image:url(img/9.jpg)"></div></div>
+				</div>
+			</div>
+		</main>
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle"></div>
+			<span class="cursor__inner cursor__inner--text">&nbsp;</span>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/demo3.js"></script>
+	</body>
+</html>
