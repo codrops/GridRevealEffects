@@ -215,7 +215,7 @@ a:focus {
 	width: 100%;
 	height: 100vw;
 	--cell-number: 12;
-	--cell-size: calc(100vw / var(--cell-number));
+	--cell-size: 8.3333vw;
 	grid-template-columns: repeat(auto-fill, var(--cell-size));
 	will-change: transform;
 }
@@ -224,6 +224,7 @@ a:focus {
 	.grid {
 		height: auto;
 		--cell-number: 6;
+		--cell-size: 16.6666vw;
 	}
 }
 
@@ -235,10 +236,6 @@ a:focus {
 	overflow: hidden;
 	height: var(--cell-size);
 	outline: 1px solid rgba(0,0,0,0.87);
-}
-
-.demo-1 .grid__item {
-	outline: none;
 }
 
 .grid__item-inner {
@@ -255,7 +252,7 @@ a:focus {
 }
 
 .demo-1 .grid__item-inner {
-	filter: saturate(0);
+	filter: grayscale(1);
 }
 
 .grid__item-inner::after {
